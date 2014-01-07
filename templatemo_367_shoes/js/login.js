@@ -1,15 +1,16 @@
-jQuery(function($) {
-        $('#botoncillo').submit(function(){
-            writeToFile({
-                id: $(this).find('.id').val(), 
-                content: $(this).find('.content').val()
-            });
-            return false;
-        }); 
-        function writeToFile(data){
-            var fso = new ActiveXObject("Scripting.FileSystemObject");
-            var fh = fso.OpenTextFile("data.txt", 8);
-            fh.WriteLine(data.id + ',' + data.content);
-            fh.Close(); 
-        } 
-    }); 
+function nuevo_usuario(){
+    $.ajax({
+        type: "POST",
+        data: { nick : "perrito", nombre:"Perrin" ,clave:"perrines"},
+        url: "php/nuevo_usuario.php" ,
+        dataType: 'text',
+        success: function (data)
+        {
+            alert(data); // overflow
+            //alert(data.key);   // value
+        }
+    });
+};
+$(document).ready(function(){
+    nuevo_usuario();
+});
