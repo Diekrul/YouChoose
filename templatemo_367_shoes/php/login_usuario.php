@@ -1,17 +1,21 @@
 <?php
     $fp = fopen('../DataBase/usuarios.txt', 'r');
 	if ($fp) {
+		$flag = false;
 		while (($bufer = fgets($fp, 4096)) !== false) {
-			$nombre = $bufer.split("~")[0];
-			$clave = $bufer.split("~")[2];
-			if($_POST['nombre']==$nombre && $_POST["clave"]==$clave){
-				echo "asd";
-				return 1;
+		    $valores = explode("~",$bufer);
+			$usuario = $valores[0];
+			$nombre = $valores[1];
+			$clave = $valores[2];			
+			if($_POST['nick']==$usuario && $_POST["clave"]==$clave){
+				echo $nombre."!";
+				$flag=true;
 			}
 		}
-		echo "~";
-		return 1;
-		if (!feof($gestor)) {
+		if(!$flag){
+			echo "";
+		}
+		if (!feof($fp)) {
 			echo "Error: fallo inesperado de fgets()\n";
 		}
 		fclose($fp);

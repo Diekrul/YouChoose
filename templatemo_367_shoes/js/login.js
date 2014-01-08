@@ -12,8 +12,9 @@ function nuevo_usuario(){
         {
 			if(data == "1"){
 				alert("Cliente agregado con exito!");
+				/*INSERTAR CODIGO redirigir a inicio de sesion*/
 			}else{
-				alert("El username de cliente ya existe");
+				alert("El nombre de usuario ya está en uso.");
 			}
         }
     });
@@ -32,8 +33,9 @@ function nuevo_cliente(){
         {
 			if(data == "1"){
 				alert("Cliente agregado con exito!");
+				/*INSERTAR CODIGO redirigir a inicio de sesion*/
 			}else{
-				alert("El username de cliente ya existe");
+				alert("El nombre de usuario ya está en uso.");
 			}
         }
     });
@@ -51,8 +53,8 @@ function login_usuario(){
         dataType: 'text',
         success: function (data)
         {
-			if(data != ""){
-				alert("Bienvenido!"+data);
+			if(data.length > 2){
+				alert("Bienvenido "+data);
 			}else{
 				alert("Combinacion erronea de usuario y contraseña");
 			}
@@ -71,8 +73,8 @@ function login_cliente(){
         dataType: 'text',
         success: function (data)
         {
-			if(data != ""){
-				alert("Bienvenido!");
+			if(data.length > 2){
+				alert("Bienvenido "+data);
 			}else{
 				alert("Combinacion erronea de usuario y contraseña");
 			}
