@@ -62,7 +62,7 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 	width: 960px;
 	height: 70px;
 	padding: 30px 10px;
-	background: url(images/templatemo_header_bg.png) no-repeat bottom; 
+	/*background: url(images/templatemo_header_bg.png) no-repeat bottom; */
 }
 
 #templatemo_menubar {
@@ -181,6 +181,12 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 	font-size: 14px;
 	font-weight: 700;
 	margin-bottom: 20px;
+}
+.product_PB {
+	color: red;
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 5px;
 }
 .product_box .addtocart {
 	float: left;
