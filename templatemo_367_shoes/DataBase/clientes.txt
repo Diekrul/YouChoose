@@ -1,4 +1,4 @@
-cliente2~nombre_cliente2~clavecliente1
-asd1~asd2~asd3
-asd2~asd~asd
-micnais~asd~asd
+micnais~asd~asd~
+cliente2~nombre_cliente2~clavecliente1~
+asd1~asd2~asd3~
+asd2~asd~asd~

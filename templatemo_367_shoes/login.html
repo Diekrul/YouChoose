@@ -11,28 +11,7 @@
 <link href="css/login-box.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/ddsmoothmenu.js"></script>
-<script type="text/javascript" src="js/login.js">
-
-
-/***********************************************
-* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
-* This notice MUST stay intact for legal use
-* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-***********************************************/
-
-</script>
-
-<script type="text/javascript">
-
-ddsmoothmenu.init({
-	mainmenuid: "top_nav", //menu DIV id
-	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
-	classname: 'ddsmoothmenu', //class added to menu's outer DIV
-	//customtheme: ["#1c5a80", "#18374a"],
-	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
-})
-
-</script>
+<script type="text/javascript" src="js/login.js"></script>
 
 </head>
 
@@ -52,21 +31,24 @@ ddsmoothmenu.init({
 			<br />
 			<div id="login-box-name" style="margin-top:20px;">Usuario:</div>
 			<div id="login-box-field" style="margin-top:20px;">
-				<input name="q" class="form-login" title="Username" value="" size="30" maxlength="2048" />
+				<input id="log-nick" class="form-login" title="Usuario" value="" size="30" maxlength="2048" />
 			</div>
 			<div id="login-box-name">Contraseña:</div>
 			<div id="login-box-field">
-				<input name="q" type="password" class="form-login" title="Password" value="" size="30" maxlength="2048" />
+				<input id="log-clave" type="password" class="form-login" title="Password" value="" size="30" maxlength="2048" />
 			</div>
 			<br />
 			<span class="login-box-options">
-				<input type="checkbox" name="1" value="1"> Iniciar como Empresa-Cliente
+				<input type="checkbox" id="checkbox-login" /> Iniciar como Empresa-Cliente<br /><br />
+				<a href="#" style="margin-left:250px;">Regístrate</a>
 			</span>
 			<br />
 			<br />
-			<a href="#">
+			<button onclick="login()">
 				<img src="images/login-btn.png" width="103" height="42" style="margin-left:90px;" />
-			</a>
+			</button>
+				
+			
 		</div>
     </div> <!-- END of templatemo_main -->
     
@@ -77,8 +59,5 @@ ddsmoothmenu.init({
     
 </div> <!-- END of templatemo_wrapper -->
 </div> <!-- END of templatemo_body_wrapper -->
-
-
-<script type='text/javascript' src='js/logging.js'></script>
 </body>
 </html>

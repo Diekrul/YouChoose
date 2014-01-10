@@ -1,3 +1,7 @@
+function redireccionar(str){
+  window.locationf="str";
+}
+
 function nuevo_usuario(){
 	var _nick = $('#usuario-nick').val();
 	var _clave = $('#usuario-clave').val();
@@ -41,40 +45,31 @@ function nuevo_cliente(){
     });
 };
 
-
-function login_usuario(){
-	var _nick = $('#usuario-log-nick').val();
-	var _clave = $('#usuario-log-clave').val();
+function login(){
+	var _nick = $('#log-nick').val();
+	var _clave = $('#log-clave').val();
 	var datos = {nick: _nick, clave: _clave};
+	var _url="php/login_usuario.php";
+	var cliente_o_usuario = $("#checkbox-login").attr("checked");
+	if(cliente_o_usuario){
+		_url="php/login_cliente.php";
+	}
     $.ajax({
         type: "POST",
         data: datos,
-        url: "php/login_usuario.php" ,
+        url: _url ,
         dataType: 'text',
         success: function (data)
         {
 			if(data.length > 2){
 				alert("Bienvenido "+data);
-			}else{
-				alert("Combinacion erronea de usuario y contraseña");
-			}
-        }
-    });
-};
-
-function login_cliente(){
-	var _nick = $('#cliente-log-nick').val();
-	var _clave = $('#cliente-log-clave').val();
-	var datos = {nick: _nick, clave: _clave};
-    $.ajax({
-        type: "POST",
-        data: datos,
-        url: "php/login_cliente.php" ,
-        dataType: 'text',
-        success: function (data)
-        {
-			if(data.length > 2){
-				alert("Bienvenido "+data);
+				if(cliente_o_usuario){
+					//soy empresa
+					window.location="#";
+				}else{
+					window.location="http://localhost:8080/sitios/YouChoose/templatemo_367_shoes?name=Mario";
+				}
+				
 			}else{
 				alert("Combinacion erronea de usuario y contraseña");
 			}
