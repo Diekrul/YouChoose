@@ -8,12 +8,13 @@
 <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
 
 <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
-
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/ddsmoothmenu.js"></script>
 <script type="text/javascript" src="js/login.js">
+
 
 /***********************************************
 * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
@@ -42,8 +43,12 @@ ddsmoothmenu.init({
 <div id="templatemo_wrapper">
 
 	<div id="templatemo_header">
-    	<div id="site_title"><h1><a href="http://www.templatemo.com" rel="nofollow">La nueva forma de comprar !!</a></h1></div>
-        <div id="header_right">
+    	<div id="site_title">
+            <h1>
+                <a href="#" rel="nofollow"></a>
+            </h1>
+        </div>
+        <div id="header_right" style="float:right">
         	<p>
 	        <a href="#">Mi perfil</a> | <a href="#">Historial de compra</a> | <a href="#">Cerrar sesión</a></p>
 		</div>
@@ -60,16 +65,22 @@ ddsmoothmenu.init({
             </ul>
             <br style="clear: left" />
         </div> <!-- end of ddsmoothmenu -->
+        <div id="templatemo_search" style="margin-top:4px;">
+            <form action="#" method="get">
+                <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+                <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+            </form>
+        </div>
     </div> <!-- END of templatemo_menubar -->
     
     <div id="templatemo_main">
         <div id="content" style="margin:0 auto;">
         	<div id="slider-wrapper">
                 <div id="slider" class="nivoSlider">
-                    <img src="images/slider/02.jpg" alt="" />
-                    <a href="#"><img src="images/slider/01.jpg" alt=""></a>
-                    <img src="images/slider/03.jpg" alt="" />
                     <img src="images/slider/04.jpg" alt="" />
+                    <a href="#"><img src="images/slider/03.jpg" alt=""></a>
+                    <img src="images/slider/02.jpg" alt="" />
+                    <img src="images/slider/01.jpg" alt="" />
                 </div>
             </div>
             <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
@@ -87,8 +98,8 @@ ddsmoothmenu.init({
                 <p>El producto se cierra en : 1 dia.</p>
                   <p class="product_PB">Personas adheridas = 134</p>
       <p class="product_price">Precio actual = $ 88.000</p>
-                <a href="shoppingcart.html" class="addtocart"></a>
-                <a href="productdetail.html" class="detail"></a>
+                <a href="shoppingcart.html" class="addtocart" style="margin-left:120px"></a>
+
             </div>        	
             <div class="product_box">
             	<h3>Microondas MS2540SR</h3>
@@ -96,47 +107,42 @@ ddsmoothmenu.init({
                 <p>El producto se cierra en : 2 dias </p>
         <p class="product_PB">Personas adheridas = 300</p>
       <p class="product_price">Precio actual = $ 58.000</p>
-                <a href="shoppingcart.html" class="addtocart"></a>
-                <a href="productdetail.html" class="detail"></a>
+                <a href="shoppingcart.html" class="addtocart" style="margin-left:120px"></a>
             </div>        	
             <div class="product_box no_margin_right">
             	<h3>Pantalla LG KS4567</h3>
             	<a href="productdetail.html"><img src="images/product/03.jpg" alt="Shoes 3" /></a>
                 <p>El producto se cierra en : 4 dias</p>
                 <p class="product_PB">Personas adheridas = 10</p>
-      <p class="product_price">Precio actual = $ 108.000</p>
-                <a href="shoppingcart.html" class="addtocart"></a>
-                <a href="productdetail.html" class="detail"></a>
+                <p class="product_price">Precio actual = $ 108.000</p>
+                <a href="shoppingcart.html" class="addtocart" style="margin-left:120px"></a>
             </div>   
             
             <div class="cleaner"></div>
                  	
-<div class="product_box">
+            <div class="product_box">
             	<h3>Calular LG Optimus X4</h3>
-           	<a href="productdetail.html"><img src="images/product/04.jpg" alt="Shoes 4" /></a>
-            <p>El producto se cierra en : 4 dias mas </p>
-      <p class="product_PB">Personas adheridas = 220</p>
-      <p class="product_price">Precio actual = $ 50.000</p>
-                <a href="shoppingcart.html" class="addtocart"></a>
-                <a href="productdetail.html" class="detail"></a>
+               	<a href="productdetail.html"><img src="images/product/04.jpg" alt="Shoes 4" /></a>
+                <p>El producto se cierra en : 4 dias mas </p>
+                <p class="product_PB">Personas adheridas = 220</p>
+                <p class="product_price">Precio actual = $ 50.000</p>
+                <a href="shoppingcart.html" class="addtocart" style="margin-left:120px"></a>
             </div>        	
             <div class="product_box">
 	            <h3>Notebook LG S510-X</h3>
             	<a href="productdetail.html"><img src="images/product/05.jpg" alt="Shoes 5" /></a>
                 <p>El producto se cierra en : 8 dia mas</p>
-      <p class="product_PB">Personas adheridas = 30</p>
-      <p class="product_price">Precio actual = $ 150.000</p>
-                <a href="shoppingcart.html" class="addtocart"></a>
-                <a href="productdetail.html" class="detail"></a>
+                <p class="product_PB">Personas adheridas = 30</p>
+                <p class="product_price">Precio actual = $ 150.000</p>
+                <a href="shoppingcart.html" class="addtocart" style="margin-left:120px"></a>
             </div>        	
             <div class="product_box no_margin_right">
             	<h3>Camara SONY Walkman NWZ-E384</h3>
             	<a href="productdetail.html"><img src="images/product/06.jpg" alt="Shoes 6" /></a>
                 <p>El producto se cierra en : 13 dias</p>
-                  <p class="product_PB">Personas adheridas = 9</p>
-      <p class="product_price">Precio actual = $ 258.000</p>
-                <a href="shoppingcart.html" class="addtocart"></a>
-                <a href="productdetail.html" class="detail"></a>
+                <p class="product_PB">Personas adheridas = 9</p>
+                <p class="product_price">Precio actual = $ 258.000</p>
+                <a href="shoppingcart.html" class="addtocart" style="margin-left:120px"></a>
             </div>        	
         </div> 
         <div class="cleaner"></div>

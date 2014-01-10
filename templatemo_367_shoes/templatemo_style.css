@@ -16,7 +16,7 @@ a, a:link, a:visited { color: #0299aa; font-weight: normal; text-decoration: non
 a:hover { text-decoration: underline; }
 
 a.addtocart{ display: inline-block; width: 80px; height: 21px; line-height: 21px; text-align: center; font-size: 10px; font-weight: bold; color: #333; background: url(images/templatemo_addtocart.png) }
-a.detail{ display: inline-block; width: 64px; height: 20px; line-height: 20px; text-align: center; font-size: 10px; font-weight: bold; color: #333; background: url(images/templatemo_detail.png) }
+a.detail{ display: inline-block; width: 64px; height: 20px; line-height: 20px; text-align: center; font-size: 10px; font-weight: bold; color: #333; background: url(images/templatemo_detailllllllll.png) }
 
 p { margin: 0 0 10px 0; padding: 0; }
 img { border: none; }
@@ -87,11 +87,11 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 	background: url(images/templatemo_footer.png) no-repeat top
 }
 
-#site_title { float: left; margin-top: 30px; }
+#site_title { float: left; margin-top: -5px; }
 #site_title h1 { margin: 0; padding: 0 }
-#site_title h1 a { display: block; width: 300px; height: 40px; padding-top: 30px; font-size: 12px; letter-spacing: 4px; color: #2f2f2f; text-align: left; background: url(images/templatemo_logo.png) no-repeat top left }
+#site_title h1 a { display: block; width: 300px; height: 70px; padding-top: 30px; font-size: 12px; letter-spacing: 4px; color: #2f2f2f; text-align: left; background: url(images/templatemo_logo.png) no-repeat top left;}
 
-#header_right { float: right; margin: 35px 240px 0 0; color: #666; }
+#header_right { float: right; margin: 68px 15px 0 0; color: #666; }
 #header_right a { color: #fff }
 
 #menu_second_bar { padding: 5px 10px; }
