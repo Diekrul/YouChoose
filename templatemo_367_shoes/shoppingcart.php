@@ -43,7 +43,7 @@ ddsmoothmenu.init({
     	<div id="site_title"><h1><a href="#" rel="nofollow"></a></h1></div>
         <div id="header_right">
             <p>
-            <a href="#">Mi perfil</a> | <a href="#">Historial de compra</a> | <a href="#">Cerrar sesión</a></p>
+            <a href="#">Hola <?php echo $_GET["name"] ?></a> | <a href="#">Mi perfil</a> | <a href="http://localhost:8080/sitios/YouChoose/templatemo_367_shoes/login.html">Cerrar sesión</a></p>
         </div>
         <div class="cleaner"></div>
     </div> <!-- END of templatemo_header -->

@@ -48,7 +48,7 @@ ddsmoothmenu.init({
     	<div id="site_title"><h1><a href="http://www.templatemo.com" rel="nofollow">Online Shoes Store</a></h1></div>
         <div id="header_right">
         	<p>
-	        <a href="#">My Account</a> | <a href="#">My Wishlist</a> | <a href="#">My Cart</a> | <a href="#">Checkout</a> | <a href="#">Log In</a></p>
+	        <a href="#">Hola <?php echo $_GET["name"] ?></a> | <a href="#">Mi perfil</a> | <a href="http://localhost:8080/sitios/YouChoose/templatemo_367_shoes/login.html">Cerrar sesión</a></p>
             <p>
             	Shopping Cart: <strong>3 items</strong> ( <a href="shoppingcart.html">Show Cart</a> )
 			</p>
