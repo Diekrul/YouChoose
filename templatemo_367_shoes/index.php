@@ -157,5 +157,14 @@ ddsmoothmenu.init({
 
 
 <script type='text/javascript' src='js/logging.js'></script>
+
+<!--ESTE CODIGO SE REPITE EN TODAS LAS VENTANAS EN LAS QUE SEA NECESARIO EL LOGIN PARA VER EL CONTENIDO.-->
+<script type='text/javascript' >
+	<?php
+		if (!array_key_exists("name", $_GET  )){
+			echo 'location.href="http://localhost:8080/sitios/YouChoose/templatemo_367_shoes/login.html"';
+		}		
+	?>
+</script>
 </body>
 </html>
