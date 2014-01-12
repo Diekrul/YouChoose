@@ -67,31 +67,27 @@ ddsmoothmenu.init({
     </div> <!-- END of templatemo_menubar --> <!-- END of templatemo_menubar -->   
     <div id="templatemo_main">
         <div id="content" style="margin:0 auto;">
-        	<h1>Adhesión a producto</h1>
-        	<table width="680px" cellspacing="0" cellpadding="5">
-                   	  <tr bgcolor="#ddd">
-                        	<th width="220" align="left">Imagen </th> 
-                        	<th width="180" align="left">Descripción </th> 
-                       	  	<th width="100" align="center">Cantidad </th> 
-                        	<th width="60" align="right">Precio </th> 
-                        	<th width="60" align="right">Total </th> 
-                        	<th width="90"> </th>
+            <h1>Adhesión a producto</h1>
+            <table width="680px" cellspacing="0" cellpadding="5">
+                      <tr bgcolor="#ddd">
+                            <th width="220" align="left">Imagen </th> 
+                            <th width="180" align="left">Descripción </th> 
+                            <th width="60" align="right">Precio </th>
+                            <th width="60" align="right">Personas adheridas</th>  
+                            <th width="90"> </th>
                             
                       </tr>
-                    	<tr>
-                        	<td><img src="images/product/01.jpg" alt="image 1" /></td> 
-                        	<td>Etiam in tellus (Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow">XHTML</a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow">CSS</a>)</td> 
-                            <td align="center"><input type="text" value="1" style="width: 20px; text-align: right" /> </td>
-                            <td align="right">$100 </td> 
-                            <td align="right">$100 </td>
-                            <td align="center"> <a href="#"><img src="images/remove_x.gif" alt="remove" /><br />Quiero Adherirme</a> </td>
-
-
-						</tr>
+                        <tr>
+                            <td><img src="images/product/01.jpg" alt="image 1" /></td> 
+                            <td>Televisor Full Hd </td> 
+                            <td align="right">$88.000 </td> 
+                            <td align="right">134</td>
+                            <td align="center"> <a href="#"><img src="images/remove_x.gif" alt="remove" /><br />Entrar a la subasta</a> </td>
+                        </tr>
 					</table>
                     <div class="cleaner h30"></div>
-                        <h5>Déscripción del producto</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur semper quam sit amet turpis rhoncus id venenatis tellus sollicitudin. Fusce ullamcorper, dolor non mollis pulvinar, turpis tortor commodo nisl, et semper lectus augue blandit tellus. Quisque id bibendum libero. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow">XHTML</a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow">CSS</a>.</p> 
+                        <h5>Descripción del producto</h5>
+                        <p>Panel EDGE (LED PLUS) Tamaño 84" Resolución 3840 x 2160 Micro Pixel Control Si Tasa Refresco Panel 240Hz Motion Clarity Index (MCI) Hz 960Hz <br/> Con los Televisores Full HD LG de pantalla plana, todas tus amistades querrán visitarte en cuanto se presente la ocasión. Con su estilizado y elegante diseño, los televisores LG te sorprenderán con sus múltiples opciones de entretenimiento, lo que se traducirá en interminables horas de diversión.<a href="http://validator.w3.org/check?uri=referer" rel="nofollow"></a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow"></a>.</p> 
                     <div style="float:right; width: 215px; margin-top: 20px;">
                     <p><a href="javascript:history.back()">Volver</a></p>
                     	

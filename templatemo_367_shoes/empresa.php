@@ -59,7 +59,9 @@ ddsmoothmenu.init({
     	<div id="top_nav" class="ddsmoothmenu">
             <ul>
                 <li><a href="inicio.php" class="selected">Inicio</a></li>
-                <li><a href="#">Adhesiones</a></li>
+                <li><a href="#">Mis subastas</a>
+                </li>
+                <li><a href="#">Estadisticas</a>
                 <li><a href="#">Acerca de</a>
             </ul>
             <br style="clear: left" />
@@ -90,58 +92,58 @@ ddsmoothmenu.init({
             });
             </script>
 			
-        	<h1>Adhesiones abiertas</h1>			
+        	<h1>Subastas Abiertas</h1>			
             <div class="product_box">
 	            <h3>Pantalla LG 84LM9600</h3>
-            	<a href="productdetail.php?name=<?php echo $_GET["name"] ?>"><img src="images/product/01.jpg" alt="Shoes 1" /></a>
-                <p>El producto se cierra en : 1 dias.</p>
+            	<a href="productdetail.php?name=<?php echo $_GET["name"] ?>"><img src="images/subasta.png" alt="Shoes 1" /></a>
+                <p>La subasta se cierra en : 1 dia.</p>
                   <p class="product_PB">Personas adheridas = 134</p>
       <p class="product_price">Precio actual = $ 88.000</p>
-                <a href="shoppingcart-LG84.php?name=<?php echo $_GET["name"] ?>" class="addtocart" style="margin-left:120px"></a>
+                <a href="shoppingcart-LG84-E.php?name=<?php echo $_GET["name"] ?>" class="subastar" style="margin-left:120px"></a>
 
             </div>        	
             <div class="product_box">
             	<h3>Microondas MS2540SR</h3>
-            	<a href="productdetail.php?name=<?php echo $_GET["name"] ?>"><img src="images/product/02.jpg" alt="Shoes 2" /></a>
-                <p>El producto se cierra en : 2 dias </p>
+            	<a href="productdetail.php?name=<?php echo $_GET["name"] ?>"><img src="images/subasta.png" alt="Shoes 2" /></a>
+                <p>La subasta se cierra en : 2 dias </p>
         <p class="product_PB">Personas adheridas = 300</p>
       <p class="product_price">Precio actual = $ 58.000</p>
-                <a href="shoppingcart-Microondas.php?name=<?php echo $_GET["name"] ?>" class="addtocart" style="margin-left:120px"></a>
+                <a href="shoppingcart-Microondas-E.php?name=<?php echo $_GET["name"] ?>" class="subastar" style="margin-left:120px"></a>
             </div>        	
             <div class="product_box no_margin_right">
-            	<h3>Pantalla LG W2353v-PF</h3>
-            	<a href="productdetail.php?name=<?php echo $_GET["name"] ?>"><img src="images/product/03.jpg" alt="Shoes 3" /></a>
-                <p>El producto se cierra en : 4 dias</p>
+            	<h3>Pantalla LG KS4567</h3>
+            	<a href="productdetail.php?name=<?php echo $_GET["name"] ?>"><img src="images/subasta.png" alt="Shoes 3" /></a>
+                <p>La subasta se cierra en : 4 dias</p>
                 <p class="product_PB">Personas adheridas = 10</p>
                 <p class="product_price">Precio actual = $ 108.000</p>
-                <a href="shoppingcart-LGKS.php?name=<?php echo $_GET["name"] ?>" class="addtocart" style="margin-left:120px"></a>
+                <a href="shoppingcart-LGKS -E.php?name=<?php echo $_GET["name"] ?>" class="subastar" style="margin-left:120px"></a>
             </div>   
             
             <div class="cleaner"></div>
                  	
             <div class="product_box">
             	<h3>Calular LG Optimus X4</h3>
-               	<a href="productdetail.php?name=<?php echo $_GET["name"] ?>"><img src="images/product/04.jpg" alt="Shoes 4" /></a>
-                <p>El producto se cierra en : 4 dias </p>
+               	<a href="productdetail.php?name=<?php echo $_GET["name"] ?>"><img src="images/subasta.png" alt="Shoes 4" /></a>
+                <p>La subasta se cierra en : 4 dias mas </p>
                 <p class="product_PB">Personas adheridas = 220</p>
                 <p class="product_price">Precio actual = $ 50.000</p>
-                <a href="shoppingcart-Celular.php?name=<?php echo $_GET["name"] ?>" class="addtocart" style="margin-left:120px"></a>
+                <a href="shoppingcart-Celular-E.php?name=<?php echo $_GET["name"] ?>" class="subastar" style="margin-left:120px"></a>
             </div>        	
             <div class="product_box">
 	            <h3>Notebook LG S510-X</h3>
-            	<a href="productdetail.php?name=<?php echo $_GET["name"] ?>"><img src="images/product/05.jpg" alt="Shoes 5" /></a>
-                <p>El producto se cierra en : 8 dias </p>
+            	<a href="productdetail.php?name=<?php echo $_GET["name"] ?>"><img src="images/subasta.png" alt="Shoes 5" /></a>
+                <p>La subasta se cierra en : 8 dia mas</p>
                 <p class="product_PB">Personas adheridas = 30</p>
                 <p class="product_price">Precio actual = $ 150.000</p>
-                <a href="shoppingcart-Notebook.php?name=<?php echo $_GET["name"] ?>" class="addtocart" style="margin-left:120px"></a>
+                <a href="shoppingcart-Notebook -E.php?name=<?php echo $_GET["name"] ?>" class="subastar" style="margin-left:120px"></a>
             </div>        	
             <div class="product_box no_margin_right">
-            	<h3>Camara SONY Cybershot DSC-H100</h3>
-            	<a href="productdetail.php?name=<?php echo $_GET["name"] ?>"><img src="images/product/06.jpg" alt="Shoes 6" /></a>
-                <p>El producto se cierra en : 13 dias</p>
+            	<h3>Camara SONY Walkman NWZ-E384</h3>
+            	<a href="productdetail.php?name=<?php echo $_GET["name"] ?>"><img src="images/subasta.png" alt="Shoes 6" /></a>
+                <p>La subasta se cierra en : 13 dias</p>
                 <p class="product_PB">Personas adheridas = 9</p>
                 <p class="product_price">Precio actual = $ 258.000</p>
-                <a href="shoppingcart-Camara.php?name=<?php echo $_GET["name"] ?>" class="addtocart" style="margin-left:120px"></a>
+                <a href="shoppingcart-Camara-E.php?name=<?php echo $_GET["name"] ?>" class="subastar" style="margin-left:120px"></a>
             </div>        	
         </div> 
         <div class="cleaner"></div>
