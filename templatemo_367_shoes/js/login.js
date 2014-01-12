@@ -65,9 +65,9 @@ function login(){
 				alert("Bienvenido "+data);
 				if(cliente_o_usuario){
 					//soy empresa
-					window.location="#";
+					window.location="http://localhost:8080/sitios/YouChoose/templatemo_367_shoes/empresa.php?name="+data;
 				}else{
-					window.location="http://localhost:8080/sitios/YouChoose/templatemo_367_shoes?name=Mario";
+					window.location="http://localhost:8080/sitios/YouChoose/templatemo_367_shoes?name="+data;
 				}
 				
 			}else{
