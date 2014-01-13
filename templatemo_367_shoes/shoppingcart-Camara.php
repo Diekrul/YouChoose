@@ -10,15 +10,17 @@
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/ddsmoothmenu.js">
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+<?php
+	function url(){
+		if (!array_key_exists("name", $_GET  )){
+			echo "";
+		}else{
+			echo "?name=".$_GET["name"];
+		}
+	}
+ ?>
 
-/***********************************************
-* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
-* This notice MUST stay intact for legal use
-* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-***********************************************/
-
-</script>
 
 <script type="text/javascript">
 
@@ -51,8 +53,8 @@ ddsmoothmenu.init({
     <div id="templatemo_menubar">
         <div id="top_nav" class="ddsmoothmenu">
             <ul>
-                <li><a href="inicio.html"   class="selected">Inicio</a></li>
-                <li><a href="crear-iniciativa.php">Comenzar Iniciativa</a>
+                <li><a href="index.php<?php url() ?>"   class="selected">Inicio</a></li>
+                <li><a href="crear-iniciativa.php<?php url() ?>">Comenzar Iniciativa</a>
                 </li>
                 <li><a href="#">Acerca de</a>
             </ul>

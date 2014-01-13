@@ -14,7 +14,18 @@
 <script type="text/javascript" src="js/login.js"></script>
 
 </head>
-
+<?php
+	function url(){
+		if (!array_key_exists("name", $_GET  )){
+			echo "";
+		}else{
+			echo "?name=".$_GET["name"];
+		}
+	}
+	if (!array_key_exists("name", $_GET  )){
+		echo "<script type='text/javascript'>location.href='http://localhost:8080/sitios/YouChoose/templatemo_367_shoes/login.html';</script>";
+	}
+ ?>
 <body>
 
 <div id="templatemo_body_wrapper" style="background-image: url(images/templatemo_body_top_gris.png)">

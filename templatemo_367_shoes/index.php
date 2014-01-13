@@ -13,16 +13,22 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/ddsmoothmenu.js"></script>
-<script type="text/javascript" src="js/login.js">
+<script type="text/javascript" src="js/login.js"></script>
+
+<?php
+	function url(){
+		if (!array_key_exists("name", $_GET  )){
+			echo "";
+		}else{
+			echo "?name=".$_GET["name"];
+		}
+	}
+	if (!array_key_exists("name", $_GET  )){
+		echo "<script type='text/javascript'>location.href='http://localhost:8080/sitios/YouChoose/templatemo_367_shoes/login.html';</script>";
+	}
+ ?>
 
 
-/***********************************************
-* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
-* This notice MUST stay intact for legal use
-* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-***********************************************/
-
-</script>
 
 <script type="text/javascript">
 
@@ -58,8 +64,8 @@ ddsmoothmenu.init({
     <div id="templatemo_menubar">
     	<div id="top_nav" class="ddsmoothmenu">
             <ul>
-                <li><a href="inicio.php" class="selected">Inicio</a></li>
-                <li><a href="crear-iniciativa.php">Comenzar Iniciativa</a></li>
+                <li><a href="index.php<?php url() ?>" class="selected">Inicio</a></li>
+                <li><a href="crear-iniciativa.php<?php url() ?>">Comenzar Iniciativa</a></li>
                 <li><a href="#">Acerca de</a>
             </ul>
             <br style="clear: left" />
@@ -158,13 +164,5 @@ ddsmoothmenu.init({
 
 <script type='text/javascript' src='js/logging.js'></script>
 
-<!--ESTE CODIGO SE REPITE EN TODAS LAS VENTANAS EN LAS QUE SEA NECESARIO EL LOGIN PARA VER EL CONTENIDO.-->
-<script type='text/javascript' >
-	<?php
-		if (!array_key_exists("name", $_GET  )){
-			echo 'location.href="http://localhost:8080/sitios/YouChoose/templatemo_367_shoes/login.html"';
-		}		
-	?>
-</script>
 </body>
 </html>

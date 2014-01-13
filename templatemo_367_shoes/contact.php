@@ -10,16 +10,19 @@
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/ddsmoothmenu.js">
-
-/***********************************************
-* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
-* This notice MUST stay intact for legal use
-* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-***********************************************/
-
-</script>
-
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+<?php
+	function url(){
+		if (!array_key_exists("name", $_GET  )){
+			echo "";
+		}else{
+			echo "?name=".$_GET["name"];
+		}
+	}
+	if (!array_key_exists("name", $_GET  )){
+		echo "<script type='text/javascript'>location.href='http://localhost:8080/sitios/YouChoose/templatemo_367_shoes/login.html';</script>";
+	}
+ ?>
 <script type="text/javascript">
 
 ddsmoothmenu.init({
@@ -54,7 +57,8 @@ ddsmoothmenu.init({
     <div id="templatemo_menubar">
     	<div id="top_nav" class="ddsmoothmenu">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html<?php url() ?>">Home</a></li>
+				
                 <li><a href="products.html">Products</a>
                     <ul>
                         <li><a rel="nofollow" href="http://www.templatemo.com/page/1">Sub menu 1</a></li>

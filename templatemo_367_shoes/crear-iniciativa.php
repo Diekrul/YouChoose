@@ -20,6 +20,19 @@
 
 </script>
 
+<?php
+	function url(){
+		if (!array_key_exists("name", $_GET  )){
+			echo "";
+		}else{
+			echo "?name=".$_GET["name"];
+		}
+	}
+	if (!array_key_exists("name", $_GET  )){
+		echo "<script type='text/javascript'>location.href='http://localhost:8080/sitios/YouChoose/templatemo_367_shoes/login.html';</script>";
+	}
+ ?>
+
 <script type="text/javascript">
 
 ddsmoothmenu.init({
@@ -51,8 +64,8 @@ ddsmoothmenu.init({
     <div id="templatemo_menubar">
         <div id="top_nav" class="ddsmoothmenu">
             <ul>
-                <li><a href="inicio.html">Inicio</a></li>
-                <li><a href="crear-iniciativa.php"  class="selected">Comenzar Iniciativa</a>
+                <li><a href="index.php<?php url() ?>">Inicio</a></li>
+                <li><a href="crear-iniciativa.php<?php url() ?>"  class="selected">Comenzar Iniciativa</a>
                 </li>
                 <li><a href="#">Acerca de</a>
             </ul>
@@ -71,7 +84,7 @@ ddsmoothmenu.init({
 
     <div id="form_container">
         <h1><a>Crear una iniciativa de compra</a></h1>
-        <form id="form_774091" class="appnitro" enctype="multipart/form-data" method="post" action="">
+        <form id="form_774091" class="appnitro" enctype="multipart/form-data" method="post" action="index.php<?php url() ?>">
                     <div class="form_description">
             <p>En esta sección podra crear postular el producto que usted desea!. Solo complete el formulario y su producto pasara a ser revisado por You Choose.</p>
         </div>                      
@@ -134,5 +147,6 @@ ddsmoothmenu.init({
 
 
 <script type='text/javascript' src='js/logging.js'></script>
+
 </body>
 </html>
