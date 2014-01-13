@@ -51,8 +51,8 @@ ddsmoothmenu.init({
     <div id="templatemo_menubar">
         <div id="top_nav" class="ddsmoothmenu">
             <ul>
-                <li><a href="inicio.html"   class="selected">Inicio</a></li>
-                <li><a href="crear-iniciativa-php">Comenzar Iniciativa</a>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="crear-iniciativa.php"  class="selected">Comenzar Iniciativa</a>
                 </li>
                 <li><a href="#">Acerca de</a>
             </ul>
@@ -67,35 +67,60 @@ ddsmoothmenu.init({
     </div> <!-- END of templatemo_menubar --> <!-- END of templatemo_menubar -->   
     <div id="templatemo_main">
         <div id="content" style="margin:0 auto;">
-        	<h1>Adhesión a producto</h1>
-        	<table width="680px" cellspacing="0" cellpadding="5">
-                   	  <tr bgcolor="#ddd">
-                        	<th width="220" align="left">Imagen </th> 
-                        	<th width="180" align="left">Descripción </th> 
-                       	  	<th width="100" align="center">Cantidad </th> 
-                        	<th width="60" align="right">Precio </th> 
-                        	<th width="60" align="right">Total </th> 
-                        	<th width="90"> </th>
-                            
-                      </tr>
-                    	<tr>
-                        	<td><img src="images/product/02.jpg" alt="image 1" /></td> 
-                        	<td>Microondas </td> 
-                            <td align="center"><input type="text" value="1" style="width: 20px; text-align: right" /> </td>
-                            <td align="right">$58.000 </td> 
-                            <td align="right">$58.000 </td>
-                            <td align="center"> <a href="#"><img src="images/remove_x.gif" alt="remove" /><br />Quiero Adherirme</a> </td>
+     
 
+    <div id="form_container">
+        <h1><a>Crear una iniciativa de compra</a></h1>
+        <form id="form_774091" class="appnitro" enctype="multipart/form-data" method="post" action="">
+                    <div class="form_description">
+            <p>En esta sección podra crear postular el producto que usted desea!. Solo complete el formulario y su producto pasara a ser revisado por You Choose.</p>
+        </div>                      
+            <ul >
+            
+                    <li id="li_6" >
+        <label class="description" for="element_6">Seleccione el tipo de iniciativa </label>
+        <span>
+            <input id="element_6_1" name="element_6" class="element radio" type="radio" value="1" />
+<label class="choice" for="element_6_1">Producto</label>
+<input id="element_6_2" name="element_6" class="element radio" type="radio" value="2" />
+<label class="choice" for="element_6_2">Servicio</label>
 
-						</tr>
-					</table>
-                    <div class="cleaner h30"></div>
-                        <h5>Déscripción del producto</h5>
-                        <p>inicio rápido, reloj digital, plato giratorio, descongelado rápido, función microondas, 2 años de garantía <a href="http://validator.w3.org/check?uri=referer" rel="nofollow"></a><a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow"></a></p> 
-                    <div style="float:right; width: 215px; margin-top: 20px;">
-                    <p><a href="javascript:history.back()">Volver</a></p>
-                    	
-                    </div>
+        </span> 
+        </li>       <li id="li_1" >
+        <label class="description" for="element_1" style="margin-top:20px">Nombre de la iniciativa </label><br/>
+        <div>
+            <input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/> 
+        </div> 
+        </li>       <li id="li_2" >
+        <label class="description" for="element_2">Precio propuesto para la iniciativa </label><br/>
+        <div>
+            <input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value=""/> 
+        </div> 
+        </li>       <li id="li_3" >
+        <label class="description" for="element_3">Link asociado al producto </label><br/>
+        <div>
+            <input id="element_3" name="element_3" class="element text medium" type="text" maxlength="255" value=""/> 
+        </div> 
+        </li>       <li id="li_4" >
+        <label class="description" for="element_4">Descripción del producto </label><br/>
+        <div>
+            <input id="element_4" name="element_4" class="element text medium" type="text" maxlength="255" value=""/> 
+        </div> 
+        </li>       <li id="li_5" >
+        <label class="description" for="element_5">Fotografia asociada al producto </label><br/>
+        <div>
+            <input id="element_5" name="element_5" class="element file" type="file"/> 
+        </div>  
+        </li>
+            
+                    <li class="buttons">
+                <input type="hidden" name="form_id" value="774091" />
+                
+                <input id="saveForm" class="button_text" type="submit" name="submit" value="Enviar Iniciativa" />
+        </li>
+            </ul>
+        </form> 
+    </div>
 			</div>
         <div class="cleaner"></div>
     </div> <!-- END of templatemo_main -->

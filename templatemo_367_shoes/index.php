@@ -59,7 +59,7 @@ ddsmoothmenu.init({
     	<div id="top_nav" class="ddsmoothmenu">
             <ul>
                 <li><a href="inicio.php" class="selected">Inicio</a></li>
-                <li><a href="#">Adhesiones</a></li>
+                <li><a href="crear-iniciativa.php">Comenzar Iniciativa</a></li>
                 <li><a href="#">Acerca de</a>
             </ul>
             <br style="clear: left" />
