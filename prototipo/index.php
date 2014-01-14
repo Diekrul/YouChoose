@@ -23,11 +23,29 @@
 			echo "?name=".$_GET["name"];
 		}
 	}
+	function url2(){
+		if (!array_key_exists("name", $_GET  )){
+			return "";
+		}else{
+			return "?name=".$_GET["name"];
+		}
+	}
 	if (!array_key_exists("name", $_GET  )){
 		echo "<script type='text/javascript'>location.href='http://localhost:8000/sitios/YouChoose/prototipo/login.html';</script>";
 	}
  ?>
-
+<?php
+	if($_SERVER['REQUEST_METHOD'] == "POST"){
+		$fp = fopen('DataBase/productos.txt', 'a+');
+		if(array_key_exists("element_5", $_POST)){
+			$asd = $_POST["element_5"];
+		}else{ $asd = "-"; }
+		$s = "\n".$_POST['element_6']."~".$_POST['element_1']."~".$_POST['element_2']."~".$_POST['element_3']."~".$_POST['element_4']."~".$asd."~10~1~";
+		//echo $s;
+		fwrite($fp, $s);
+		fclose($fp);
+	}
+ ?>
 
 
 <script type="text/javascript">
@@ -96,7 +114,25 @@ ddsmoothmenu.init({
             });
             </script>
 			
-        	<h1>Adhesiones abiertas</h1>			
+        	<h1>Adhesiones abiertas</h1>
+			<?php 
+				$fp = fopen('DataBase/productos.txt', 'r');
+				if ($fp) {
+					$flag = false;
+					while (($bufer = fgets($fp, 4096)) !== false) {
+						$valores = explode("~",$bufer);		
+						echo "<div class='product_box'>
+							<h3>".$valores[0]."</h3>
+							<a href='#'><img src='images/product/default.jpg' alt='Shoes 1' /></a>
+							<p>El producto se cierra en : ".$valores[6]." dias.</p>
+							  <p class='product_PB'>Personas adheridas = ".$valores[7]."</p>
+							<p class='product_price'>Precio actual = $".$valores[2]."</p>
+							<a href='shoppingcart-generico.php".url2()."&prod=".$valores[1]."' class='addtocart' style='margin-left:120px'></a>
+						</div>";
+					}
+					fclose($fp);
+				}
+			?>
             <div class="product_box">
 	            <h3>Pantalla LG 84LM9600</h3>
             	<a href="#"><img src="images/product/01.jpg" alt="Shoes 1" /></a>
@@ -123,7 +159,7 @@ ddsmoothmenu.init({
                 <a href="shoppingcart-LGKS.php?name=<?php echo $_GET["name"] ?>" class="addtocart" style="margin-left:120px"></a>
             </div>   
             
-            <div class="cleaner"></div>
+            <!--<div class="cleaner"></div>-->
                  	
             <div class="product_box">
             	<h3>Calular LG Optimus X4</h3>

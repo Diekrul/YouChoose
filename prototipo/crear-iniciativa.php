@@ -93,9 +93,9 @@ ddsmoothmenu.init({
                     <li id="li_6" >
         <label class="description" for="element_6">Seleccione el tipo de iniciativa </label>
         <span>
-            <input id="element_6_1" name="element_6" class="element radio" type="radio" value="1" />
+            <input id="element_6_1" checked name="element_6" class="element radio" type="radio" value="Producto" />
 <label class="choice" for="element_6_1">Producto</label>
-<input id="element_6_2" name="element_6" class="element radio" type="radio" value="2" />
+<input id="element_6_2" name="element_6" class="element radio" type="radio" value="Servicio" />
 <label class="choice" for="element_6_2">Servicio</label>
 
         </span> 
