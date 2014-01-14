@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>You Choose</title>
+<meta name="keywords" content="shoes store, free template, ecommerce, online shop, website templates, CSS, HTML" />
+<meta name="description" content="Shoes Store is a free ecommerce template provided by templatemo.com" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+<link href="css/login-box.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+
+</head>
+<?php
+	function url(){
+		if (!array_key_exists("name", $_GET  )){
+			echo "";
+		}else{
+			echo "?name=".$_GET["name"];
+		}
+	}
+	if (!array_key_exists("name", $_GET  )){
+		echo "<script type='text/javascript'>location.href='http://localhost:8000/sitios/YouChoose/prototipo/login.html';</script>";
+	}
+ ?>
+<body>
+
+<div id="templatemo_body_wrapper" style="background-image: url(images/templatemo_body_top_gris.png)">
+<div id="templatemo_wrapper">
+
+	
+    
+    <div style="height:100px;"></div>
+    
+    <div id="templatemo_main" style="height:400px;position:relative;">
+        <img src="images/logo_grande.jpg" style="margin-top:20px;margin-left:20px;" />
+		<div id="login-box" style="position:absolute;">
+			<H2>Iniciar Sesion</H2>
+			<br />
+			<div id="login-box-name" style="margin-top:20px;">Usuario:</div>
+			<div id="login-box-field" style="margin-top:20px;">
+				<input id="log-nick" class="form-login" title="Usuario" value="" size="30" maxlength="2048" />
+			</div>
+			<div id="login-box-name">Contraseña:</div>
+			<div id="login-box-field">
+				<input id="log-clave" type="password" class="form-login" title="Password" value="" size="30" maxlength="2048" />
+			</div>
+			<br />
+			<span class="login-box-options">
+				<input type="checkbox" id="checkbox-login" /> Iniciar como Empresa-Cliente<br /><br />
+				<a href="#" style="margin-left:250px;">Regístrate</a>
+			</span>
+			<br />
+			<br />
+			<button onclick="login()">
+				<img src="images/login-btn.png" width="103" height="42" style="margin-left:90px;" />
+			</button>
+				
+			
+		</div>
+    </div> <!-- END of templatemo_main -->
+    
+    <div id="templatemo_footer">
+
+    	Copyright © 2013 <a href="#"> Magdi - You Choose </a> 
+    </div> <!-- END of templatemo_footer -->
+    
+</div> <!-- END of templatemo_wrapper -->
+</div> <!-- END of templatemo_body_wrapper -->
+</body>
+</html>
